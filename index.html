@@ -8,19 +8,72 @@
         <meta name="code" content="Кодировка: utf-8">
         <meta name="words" content="Блины,рецепт,тесто,масленица,традиции">
         <title>Рецепт Блинов</title> 
-        <style type="text/css">ol.counter-list {
-    list-style: none;
-    counter-reset: item 4;
-    padding-left: 0;
-}
-ol.counter-list li {
-    counter-increment: item;
-}
-ol.counter-list li::before {
-    content: " " counter(item) ". ";
-    color: #333;
-    font-weight: bold;
-}</style>
+        <style type="text/css">
+            ol.counter-list {
+                list-style: none;
+                counter-reset: item 4;
+                padding-left: 0;
+            }
+            ol.counter-list li {
+                counter-increment: item;
+            }
+            ol.counter-list li::before {
+                content: " " counter(item) ". ";
+                color: #333;
+                font-weight: bold;
+            }
+            /* Стили для современной таблицы */
+            .modern-table {
+                border-collapse: collapse;
+                width: 100%;
+                max-width: 800px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                color: #333;
+                border: 1px solid #ccc;
+                margin-top: 20px;
+            }
+            .modern-table td {
+                padding: 10px 15px;
+                border: 1px solid #e0e0e0;
+                vertical-align: middle;
+            }
+            /* Заголовок таблицы */
+            .modern-table thead tr {
+                background: linear-gradient(to bottom, #ffffff 0%, #eef3fb 100%);
+            }
+            .modern-table thead td {
+                color: #2c4c9c;
+                font-weight: bold;
+                border-bottom: 1px solid #ccc;
+            }
+            /* Первый столбец (Summary) - чередование */
+            .modern-table tbody td:first-child {
+                color: #2c4c9c;
+                width: 200px;
+            }
+            .modern-table tbody tr:nth-child(odd) td:first-child {
+                background-color: #eef3fb;
+            }
+            .modern-table tbody tr:nth-child(even) td:first-child {
+                background-color: #ffffff;
+            }
+            /* Остальные столбцы (информация о сайтах) - СЕРЫЙ ФОН */
+            .modern-table tbody td:not(:first-child) {
+                background-color: #cacaca; /* Серый цвет */
+                text-align: center;
+            }
+            /* Последняя строка (Status) - ВСЯ БЕЛАЯ */
+            .modern-table tbody tr:last-child td {
+                background-color: #ffffff !important;
+                font-weight: bold;
+                color: #000;
+            }
+            .modern-table tbody tr:last-child td:first-child {
+                background-color: #ffffff !important;
+                color: #333;
+            }
+        </style>
     </head>
     <body>
         <h1>Статья о рецепте блинов</h1>
@@ -235,73 +288,77 @@ ol.counter-list li::before {
 </table>
 
 <h3>Таблица 4-11(2)</h3>
-<table border="1" cellspacing="0" cellpadding="5" style="border-collapse: collapse; width: 600px;">
-     <tr>
-        <td style="background-color: rgb(189, 235, 241);"><span  style="color: blue;">Summary</span></td>
-        <td style="background-color: rgb(189, 235, 241);"><span style="color: blue;">Website.com</span></td>
-        <td style="background-color: rgb(189, 235, 241);"><span style="color: blue;">Webdite.net</span></td>
-        <td style="background-color: rgb(189, 235, 241);"><span style="color: blue;">Website.org</span></td>
-        <td style="background-color: rgb(189, 235, 241);"><span style="color: blue;">Website.info</span></td>
-    </tr>
-     <tr>
-        <td style="background-color: rgb(179, 201, 243);"><span  style="color: blue;">Daily Unique</span></td>
-        <td style="background-color: rgb(202, 202, 202)">10 000</td>
-        <td style="background-color: rgb(202, 202, 202)">10 000</td>
-        <td style="background-color: rgb(202, 202, 202)">10 000</td>
-        <td style="background-color: rgb(202, 202, 202)">10 000</td>
-    </tr>
-         <tr>
-        <td style="background-color: rgb(179, 201, 243);"><span  style="color: blue;">Unique Visitors</span></td>
-        <td style="background-color: rgb(202, 202, 202)">300 000</td>
-        <td style="background-color: rgb(202, 202, 202)">300 000</td>
-        <td style="background-color: rgb(202, 202, 202)">300 000</td>
-        <td style="background-color: rgb(202, 202, 202)">300 000</td>
-    </tr>
-         <tr>
-        <td style="background-color: rgb(179, 201, 243);"><span  style="color: blue;">Browser</span></td>
-        <td style="background-color: rgb(202, 202, 202)">Firefox</td>
-        <td style="background-color: rgb(202, 202, 202)">Firefox</td>
-        <td style="background-color: rgb(202, 202, 202)">Firefox</td>
-        <td style="background-color: rgb(202, 202, 202)">Firefox</td>
-    </tr>
+<!-- Начало вставленной современной таблицы -->
+<table class="modern-table">
+    <thead>
         <tr>
-        <td style="background-color: rgb(179, 201, 243);"><span  style="color: blue;">Operating System</span></td>
-        <td style="background-color: rgb(202, 202, 202)">Windows 7</td>
-        <td style="background-color: rgb(202, 202, 202)">Windows 7</td>
-        <td style="background-color: rgb(202, 202, 202)">Windows 7</td>
-        <td style="background-color: rgb(202, 202, 202)">Windows 7</td>
-    </tr>
+            <td>Summary</td>
+            <td>Website.com</td>
+            <td>Website.net</td>
+            <td>Website.org</td>
+            <td>Website.info</td>
+        </tr>
+    </thead>
+    <tbody>
         <tr>
-        <td style="background-color: rgb(179, 201, 243);"><span  style="color: blue;">Screen Resolution</span></td>
-        <td style="background-color: rgb(202, 202, 202)">1280x1024</td>
-        <td style="background-color: rgb(202, 202, 202)">1280x1024</td>
-        <td style="background-color: rgb(202, 202, 202)">1280x1024</td>
-        <td style="background-color: rgb(202, 202, 202)">1280x1024</td>
-    </tr>
+            <td>Daily Unique</td>
+            <td>10 000</td>
+            <td>10 000</td>
+            <td>10 000</td>
+            <td>10 000</td>
+        </tr>
         <tr>
-        <td style="background-color: rgb(179, 201, 243);"><span  style="color: blue;">Domain/Country</span></td>
-        <td style="background-color: rgb(202, 202, 202)">.com</td>
-        <td style="background-color: rgb(202, 202, 202)">.com</td>
-        <td style="background-color: rgb(202, 202, 202)">.com</td>
-        <td style="background-color: rgb(202, 202, 202)">.com</td>
-    </tr>
-    <tr>
-        <td style="background-color: rgb(179, 201, 243);"><span  style="color: blue;">Continent</span></td>
-        <td style="background-color: rgb(202, 202, 202)">Europe</td>
-        <td style="background-color: rgb(202, 202, 202)">Europe</td>
-        <td style="background-color: rgb(202, 202, 202)">Europe</td>
-        <td style="background-color: rgb(202, 202, 202)">Europe</td>
-    </tr>
-       <tr>
-        <td>Status</td>
-        <td><strong>Approved</strong></td>
-        <td><strong>Approved</strong></td>
-        <td><strong>Approved</strong></td>
-        <td><strong>Approved</strong></td>
-    </tr>
+            <td>Unique Visitors</td>
+            <td>300 000</td>
+            <td>300 000</td>
+            <td>300 000</td>
+            <td>300 000</td>
+        </tr>
+        <tr>
+            <td>Browser</td>
+            <td>Firefox</td>
+            <td>Firefox</td>
+            <td>Firefox</td>
+            <td>Firefox</td>
+        </tr>
+        <tr>
+            <td>Operating System</td>
+            <td>Windows 7</td>
+            <td>Windows 7</td>
+            <td>Windows 7</td>
+            <td>Windows 7</td>
+        </tr>
+        <tr>
+            <td>Screen Resolution</td>
+            <td>1280x1024</td>
+            <td>1280x1024</td>
+            <td>1280x1024</td>
+            <td>1280x1024</td>
+        </tr>
+        <tr>
+            <td>Domain/Country</td>
+            <td>.com</td>
+            <td>.com</td>
+            <td>.com</td>
+            <td>.com</td>
+        </tr>
+        <tr>
+            <td>Continent</td>
+            <td>Europe</td>
+            <td>Europe</td>
+            <td>Europe</td>
+            <td>Europe</td>
+        </tr>
+        <tr>
+            <td>Status:</td>
+            <td>Approved</td>
+            <td>Approved</td>
+            <td>Approved</td>
+            <td>Approved</td>
+        </tr>
+    </tbody>
 </table>
-
-
+<!-- Конец вставленной современной таблицы -->
 
         <p>Блины — одно из древнейших блюд русской кухни, круглая форма которого исторически символизировала солнце и сделала его главным символом праздника Масленицы. Секрет идеального вкуса кроется в теплых ингредиентах и отдыхе теста, благодаря которому блинчики становятся эластичными и не рвутся.</p>
         <p >Добавление масла прямо в замес позволяет выпекать их на сухой сковороде без пригорания. Универсальность блюда позволяет подавать его как сладким десертом, так и сытным обедом с мясными или рыбными начинками.</p>
@@ -325,3 +382,4 @@ ol.counter-list li::before {
         <p dir="ltr"><span style="color: red;">Секреты блинных сомелье:</span> как довести блюдо до идеалаДаже имея на руках идеальный рецепт, можно столкнуться с кулинарными неудачами. Профессиональные шеф-повара годами оттачивают технику, и у них есть свои золотые правила.Правило отдыха теста. Ни в коем случае нельзя жарить блины сразу после замешивания (если это не экспресс-вариант на соде). Тесту нужно дать постоять минимум 15–30 минут при комнатной температуре. Зачем? Пшеничная мука содержит белки, образующие клейковину. Во время «отдыха» молекулы белка расслабляются, а крахмал впитывает жидкость. Тесто становится более однородным, текучим, а сами блины будут мягкими, а не резиновыми, и не порвутся при переворачивании.Температурный контроль. Сковорода — это половина успеха. Она должна аккумулировать много тепла. Если сковорода остывает в момент, когда вы наливаете тесто, блин начинает вариться или тушиться, а не пектись. Он потеряет влагу, станет сухим и ломким. Идеальный огонь — чуть выше среднего.Филигранное смазывание. Избыток масла на сковороде — враг красивого рисунка. Если масла слишком много, тесто будет собираться каплями и скатываться, а блин получится жирным. Сковороду нужно лишь слегка «подобрать» жиром. Старинный лайфхак: половинка очищенной картофелины или луковицы, насаженная на вилку, обмакивается в растительное масло, и ей протирается сковорода. Это дает ультратонкий, едва заметный защитный слой.</p>
         <p dir="ltr" ><span style="color: red;">Блины как культурный феномен и арт-объектВ XXI веке</span> блины вышли за пределы домашних кухонь и превратились в объект поп-культуры и кулинарного арта. Сегодня во всем мире развивается тренд под названием Pancake Art (блинное искусство). Кондитеры и художники используют жидкое тесто разных цветов (окрашенное натуральными соками шпината, свеклы или какао) и с помощью кондитерских дозаторов «рисуют» на холодной сковороде портреты, персонажей мультфильмов и сложные пейзажи. Затем сковороду нагревают, заливают фоновым тестом — и получается съедобная картина.Кроме того, блинные торты (Mille Crêpe Cake) завоевали витрины лучших кондитерских мира. Идея проста, но требует ювелирной точности: между двадцатью-тридцатью тончайшими блинчиками прослаивается нежнейший заварной крем, кондитерский сливки или ганаш. В разрезе такой торт выглядит потрясающе, а его текстура буквально тает во рту.Блины — это удивительный пример того, как базовые, доступные каждому продукты при правильном обращении превращаются в гастрономический праздник. Это блюдо вне времени, вне моды и вне географических границ.</p>
     </body>
+</html>
