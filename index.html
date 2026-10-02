@@ -38,7 +38,6 @@
                 border: 1px solid #e0e0e0;
                 vertical-align: middle;
             }
-            /* Заголовок таблицы */
             .modern-table thead tr {
                 background: linear-gradient(to bottom, #ffffff 0%, #eef3fb 100%);
             }
@@ -47,7 +46,6 @@
                 font-weight: bold;
                 border-bottom: 1px solid #ccc;
             }
-            /* Первый столбец (Summary) - чередование */
             .modern-table tbody td:first-child {
                 color: #2c4c9c;
                 width: 200px;
@@ -58,12 +56,10 @@
             .modern-table tbody tr:nth-child(even) td:first-child {
                 background-color: #ffffff;
             }
-            /* Остальные столбцы (информация о сайтах) - СЕРЫЙ ФОН */
             .modern-table tbody td:not(:first-child) {
-                background-color: #cacaca; /* Серый цвет */
+                background-color: #cacaca;
                 text-align: center;
             }
-            /* Последняя строка (Status) - ВСЯ БЕЛАЯ */
             .modern-table tbody tr:last-child td {
                 background-color: #ffffff !important;
                 font-weight: bold;
@@ -73,6 +69,22 @@
                 background-color: #ffffff !important;
                 color: #333;
             }
+            <style type="text/css">
+        td, th {padding: 6px; text-align: center;}
+        .e
+        {
+            border-collapse:collapse;
+            background-color: lightyellow;
+            border: 2px solid orange;
+            td, th { border: 1px solid orange;}
+        }
+        .i {
+            font-family:Arial;
+            border-collapse: collapse;
+            background-color: rgb(228, 228, 228);
+            td, th { border: 1px solid rgb(119, 151, 153);}
+        }
+    </style>
         </style>
     </head>
     <body>
